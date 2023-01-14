@@ -294,7 +294,66 @@ h4 {
     }
 }
 
+.inner {
+    display: block;
+
+    .inner__bg {
+        width: 100%;
+    }
+}
+
+.inner__mov {
+    display: none;
+}
+
+.migapan {
+    margin-top: 40px;
+
+    .breadcrumb {
+        .breadcrumb-item {
+            a {
+                color: $Gr;
+                text-decoration: none;
+
+                &:hover {
+                    transition: all .6s;
+                    color: $Rd;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 300px) and (max-width: 820px) {
+
+    .inner {
+        display: none;
+    }
+
+    .inner__mov {
+        display: block;
+
+        .inner__mov--img {
+            width: 100%;
+        }
+    }
+
+    .pres {
+        height: 180px;
+
+        .container {
+            display: block;
+
+            .pres__txt {
+                margin-bottom: 20px;
+            }
+
+            .pres__link {
+                margin-left: 0px;
+                margin-top: 20px;
+            }
+        }
+    }
 
     .banner {
         display: none;

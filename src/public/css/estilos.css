@@ -272,7 +272,52 @@ h4 {
   color: #96201E;
 }
 
+.inner {
+  display: block;
+}
+.inner .inner__bg {
+  width: 100%;
+}
+
+.inner__mov {
+  display: none;
+}
+
+.migapan {
+  margin-top: 40px;
+}
+.migapan .breadcrumb .breadcrumb-item a {
+  color: #1a1f25;
+  text-decoration: none;
+}
+.migapan .breadcrumb .breadcrumb-item a:hover {
+  transition: all 0.6s;
+  color: #96201E;
+}
+
 @media (min-width: 300px) and (max-width: 820px) {
+  .inner {
+    display: none;
+  }
+  .inner__mov {
+    display: block;
+  }
+  .inner__mov .inner__mov--img {
+    width: 100%;
+  }
+  .pres {
+    height: 180px;
+  }
+  .pres .container {
+    display: block;
+  }
+  .pres .container .pres__txt {
+    margin-bottom: 20px;
+  }
+  .pres .container .pres__link {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
   .banner {
     display: none;
   }
@@ -1470,6 +1515,90 @@ h4 {
     -o-transform: rotate(359deg);
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
+  }
+}
+.ser .ser__header {
+  margin-top: -220px;
+  margin-bottom: 220px;
+  color: white;
+}
+.ser .ser__header .ser__header--title {
+  font-weight: bold;
+}
+.ser .ser__body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ser .ser__body .ser__section {
+  padding: 12px;
+  width: 32%;
+  margin: 12px;
+}
+.ser .ser__body .ser__section .section__header {
+  font-weight: bold;
+}
+.ser .ser__body .ser__section .section__body {
+  position: static;
+}
+.ser .ser__body .ser__section .section__body .section__body--link {
+  position: static;
+}
+.ser .ser__body .ser__section .section__body .section__body--link .section__body--image {
+  width: 100%;
+  position: static;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.ser .ser__body .ser__section .section__body .section__body--link .section__body--image:hover {
+  transition: all 0.6s;
+  opacity: 98%;
+}
+.ser .ser__body .ser__section .section__footer {
+  margin-top: 0px;
+  padding: 4px;
+  opacity: 0%;
+}
+.ser .ser__body .ser__section .section__footer .section__footer--txt {
+  margin: 10px;
+  padding: 10px;
+}
+.ser .ser__body .ser__section .section__footer .section__footer--link {
+  margin-top: 0px;
+  padding: 8px;
+  background: #1a1f25;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.ser .ser__body .ser__section .section__footer .section__footer--link:hover {
+  transition: all 0.6s;
+  background: #96201E;
+}
+.ser .ser__body .ser__section:hover {
+  transition: all 0.6s;
+}
+.ser .ser__body .ser__section:hover .section__footer {
+  transition: all 0.6s;
+  opacity: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 820px) {
+  .ser {
+    width: 98%;
+    margin: 2px;
+  }
+  .ser .ser__header {
+    margin-top: -420px;
+  }
+  .ser .ser__body {
+    display: block;
+  }
+  .ser .ser__body .ser__section {
+    width: 100%;
+    margin: 10px 10px 10px 0px;
+  }
+  .ser .ser__body .ser__section .section__footer {
+    opacity: 100%;
   }
 }
 .footer {
