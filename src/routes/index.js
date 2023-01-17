@@ -33,4 +33,12 @@ router.get('/contacto', (req, res) => {
     res.render('./partials/contacto');
 });
 
+router.get('/politica-cookies', (req, res) => {
+    res.render('./partials/cookies');
+});
+
+router.get('/politica-privacidad', (req, res) => {
+    res.render('./partials/privacy');
+});
+
 module.exports = router;
