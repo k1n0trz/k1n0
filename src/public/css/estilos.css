@@ -1606,9 +1606,16 @@ h4 {
 .contacto {
   margin-top: 40px;
 }
+.contacto .contacto__header {
+  margin-top: -240px;
+  margin-bottom: 220px;
+  color: white;
+}
+.contacto .contacto__header .contacto__header--title {
+  font-weight: bold;
+}
 
 .contacto__body .contacto__body--header {
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 .contacto__body .contacto__body--map iframe {
@@ -1643,6 +1650,16 @@ h4 {
   font-size: 30px;
 }
 
+@media (min-width: 300px) and (max-width: 820px) {
+  .contacto .contacto__header {
+    margin-top: -400px;
+  }
+  .contacto__body .contacto__body--map .map {
+    width: 100%;
+    margin: 0px;
+    left: 0%;
+  }
+}
 .privacy {
   width: 80%;
 }
