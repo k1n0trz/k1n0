@@ -42,7 +42,7 @@ router.get('/politica-privacidad', (req, res) => {
 });
 
 router.get('/sitemap', (req, res) => {
-    res.render('./partials/sitemap.xml');
+    res.render('./partials/sitemap');
 });
 
 module.exports = router;
