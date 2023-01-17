@@ -41,4 +41,8 @@ router.get('/politica-privacidad', (req, res) => {
     res.render('./partials/privacy');
 });
 
+router.get('/sitemap', (req, res) => {
+    res.render('./partials/sitemap.xml');
+});
+
 module.exports = router;
