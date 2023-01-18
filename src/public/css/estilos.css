@@ -1644,6 +1644,14 @@ h4 {
   color: #96201E;
 }
 
+.promo {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.promo .promo__header {
+  margin-bottom: 40px;
+}
+
 .pres {
   margin-top: 60px;
   background: #96201E;
