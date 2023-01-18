@@ -260,42 +260,6 @@ h4 {
     }
 }
 
-.pres {
-    margin-top: 60px;
-    background: $Rd;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: $Bl;
-    font-size: 20px;
-
-    .container {
-        display: flex;
-        justify-content: center;
-
-        .pres__txt {
-            align-items: center;
-            display: flex;
-        }
-
-        .pres__link {
-            color: $Bl;
-            background: $Gr;
-            text-decoration: none;
-            border-radius: 5px;
-            padding: 10px;
-            margin-left: 40px;
-
-            &:hover {
-                transition: all .6s;
-                color: $Rd;
-            }
-        }
-    }
-}
-
 .inner {
     display: block;
 
@@ -337,23 +301,6 @@ h4 {
 
         .inner__mov--img {
             width: 100%;
-        }
-    }
-
-    .pres {
-        height: 180px;
-
-        .container {
-            display: block;
-
-            .pres__txt {
-                margin-bottom: 20px;
-            }
-
-            .pres__link {
-                margin-left: 0px;
-                margin-top: 20px;
-            }
         }
     }
 

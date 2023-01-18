@@ -8,31 +8,81 @@
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Cotización de Servicios | K1n0 C0m</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                        <form action="/form-pres" method="post" class="form__pres">
+                            <div class="form__pres--header">
+                                <h3 class="pres__header--title">Formulario para solicitud de cotización de servicios
+                                </h3>
+                                <p class="pres__header--subt">
+                                    Por favor, rellene los campos a continuación para generar una cotización con los
+                                    servicios especificados. Los campos marcados con <i>asterisco (*)</i> son
+                                    obligatorios.
+                                </p>
                             </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                            <div class="form__pres--body">
+                                <div class="form-group">
+                                    <label class="pres__body--label">Nombre Completo (*)</label>
+                                    <input type="text" name="user" class="form-control"
+                                        placeholder="Alberto Arias">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Correo Electrónico (*)</label>
+                                    <input type="email" name="email" class="form-control"
+                                        placeholder="albertoa@service.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Teléfono Celular</label>
+                                    <input type="tel" name="phone" class="form-control" placeholder="+573135887171">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Ciudad/Departamento (*)</label>
+                                    <input type="text" name="city" class="form-control"
+                                        placeholder="Medellín/Antioquia">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Dirección</label>
+                                    <input type="text" name="adress" class="form-control" placeholder="Calle 1B #66-94">
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Seleccione el servicio del que desea consultar
+                                        (*)</label>
+                                    <select name="service" id="" class="pres__select--service form-control icon-down-open">
+                                        <option class="select__service--option">Selecciona un servicio <div class="icon-down-open"></div>
+                                        </option>
+                                        <option value="marketing" class="select__service--option">Marketing</option>
+                                        <option value="diseno" class="select__service--option">Diseño Gráfico</option>
+                                        <option value="develop" class="select__service--option">Desarrollo Web/Ecommerce
+                                        </option>
+                                        <option value="fotovid" class="select__service--option">Producción
+                                            Fotográfica/Audiovisual</option>
+                                        <option value="edit" class="select__service--option">Edición
+                                            Fotográfica/Audiovisual</option>
+                                        <option value="crypto" class="select__service--option">Teconología Blockchain
+                                        </option>
+                                        <option value="other" class="select__service--option">Otros
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="pres__body--label">Dirección</label>
+                                    <textarea name="description" class="form-control"
+                                        placeholder="Máx. 500 Caracteres"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-danger">Enviar</button>
                             </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>

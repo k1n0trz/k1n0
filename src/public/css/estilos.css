@@ -242,38 +242,6 @@ h4 {
   background: #96201E;
 }
 
-.pres {
-  margin-top: 60px;
-  background: #96201E;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-}
-.pres .container {
-  display: flex;
-  justify-content: center;
-}
-.pres .container .pres__txt {
-  align-items: center;
-  display: flex;
-}
-.pres .container .pres__link {
-  color: white;
-  background: #1a1f25;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 40px;
-}
-.pres .container .pres__link:hover {
-  transition: all 0.6s;
-  color: #96201E;
-}
-
 .inner {
   display: block;
 }
@@ -306,19 +274,6 @@ h4 {
   }
   .inner__mov .inner__mov--img {
     width: 100%;
-  }
-  .pres {
-    height: 180px;
-  }
-  .pres .container {
-    display: block;
-  }
-  .pres .container .pres__txt {
-    margin-bottom: 20px;
-  }
-  .pres .container .pres__link {
-    margin-left: 0px;
-    margin-top: 20px;
   }
   .banner {
     display: none;
@@ -1689,6 +1644,59 @@ h4 {
   color: #96201E;
 }
 
+.pres {
+  margin-top: 60px;
+  background: #96201E;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.pres .container {
+  display: flex;
+  justify-content: center;
+}
+.pres .container .pres__txt {
+  align-items: center;
+  display: flex;
+}
+.pres .container .pres__link {
+  color: white;
+  background: #1a1f25;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 40px;
+}
+.pres .container .pres__link:hover {
+  transition: all 0.6s;
+  color: #96201E;
+}
+.pres .container .modal .form__pres--body {
+  text-align: left;
+}
+.pres .container .modal .form__pres--body .form-group {
+  margin: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 820px) {
+  .pres {
+    height: 180px;
+  }
+  .pres .container {
+    display: block;
+  }
+  .pres .container .pres__txt {
+    margin-bottom: 20px;
+  }
+  .pres .container .pres__link {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
 .footer {
   padding: 20px;
   text-align: center;
